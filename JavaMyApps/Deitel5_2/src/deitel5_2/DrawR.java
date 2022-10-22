@@ -20,15 +20,17 @@ public class DrawR extends JPanel{
         this.d=d;
         this.e=e; 
     }
+    @Override
     public void paintComponent(Graphics g){
         
         super.paintComponent(g);
-        int t_height = HEIGHT/4,temp_height=HEIGHT;
-        g.drawRect(0, 0,a*20,t_height-20);
-        g.drawRect(0, t_height,b*20, t_height+20);
-        g.drawRect(0, 2*t_height,c*20, t_height);
-        g.drawRect(0, 3*t_height,d*20, t_height);
-        g.drawRect(0, 4*t_height,e*20, t_height);
+        int t=0;
+        
+        g.drawRect(0, t,a*10, t+=20);
+        g.drawRect(0, t+=1,b*10,20);
+        g.drawRect(0, t+=21,c*10, 20);
+        g.drawRect(0, t+=21,d*10, 20);
+        g.drawRect(0, t+=21,e*10, 20);
        
     }
 }
