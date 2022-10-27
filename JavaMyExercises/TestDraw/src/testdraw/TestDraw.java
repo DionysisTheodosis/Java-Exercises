@@ -1,4 +1,4 @@
-//Examble From Deitel book page 348
+// EXERCISE 8.10 FROM BOOK OF DEITEL PAGE 351
 package testdraw;
 
 import javax.swing.JFrame;
@@ -10,7 +10,7 @@ public class TestDraw {
         
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.add(panel);
-        app.setSize(300,300);
+        app.setSize(350,350);
         app.setVisible(true);
     }
     

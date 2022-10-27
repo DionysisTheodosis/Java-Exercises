@@ -1,27 +1,29 @@
 
 package testdraw;
-
-import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Color;
+import java.lang.Math;
 
-public class MyLine {
-    
+public class MyOval {
     private int x1;
     private int y1;
     private int x2;
     private int y2;
     private Color color;
+    private boolean fill;
     
-    public MyLine(){
+    public MyOval(){
         x1=0;
         y1=0;
         x2=0;
         y2=0;
         color=Color.BLACK;
+        fill=false;
     }
     //set
     public void setX1(int x1){
         this.x1=(0<=x1?x1:0);
+        
     }
     public void setY1(int y1){
         this.y1=(0<=y1?y1:0);
@@ -31,6 +33,9 @@ public class MyLine {
     }
     public void setY2(int y2){
         this.y2=(0<=y2?y2:0);
+    }
+    public void setFill(boolean fill){
+        this.fill=fill;
     }
     public void setColor(Color color){
         this.color=color;
@@ -48,14 +53,37 @@ public class MyLine {
     public int getY2(){
         return y2;
     }
+    public boolean getFill(){
+        return fill;
+    }
     public Color getColor(){
         return color;
     }
-    
-    
-    
+    public int getUpperLeftX(){
+        
+         return x1<x2?x1:x2;
+        
+    }
+    public int getUpperLeftY(){
+        return y1<y2?y1:y2;
+    }
+    public int getWidth(){
+       int width = x2-x1;
+       return Math.abs(width);
+    }
+    public int getHeight(){
+       int height = y2-y1;
+       return Math.abs(height);
+    }
+    //draw
     public void draw(Graphics g){
         g.setColor(getColor());
-        g.drawLine(getX1(),getY1(),getX2(),getY2());
+        if(getFill()){
+            g.fillOval(getX1(), getY1(),getWidth(), getHeight());
+        }
+        else{
+            g.drawOval(getX1(), getY1(),getWidth(), getHeight());
+        } 
     }
+     
 }
