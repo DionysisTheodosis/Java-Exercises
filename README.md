@@ -1,3 +1,3 @@
 # Java-Exercises
 University Exercises In Java Language,
-Exercises From Book Of Java AndPaul Deitel Harvey Deitel 10th Edition
+Exercises From Book Of : How To Programm, Paul Deitel Harvey Deitel 10th Edition
