@@ -67,6 +67,11 @@ public class DrawPanel extends JPanel {
             rectangles[count].setFill(fill);
         }
     }
+    //For Exercise 9.1
+    public String getLabel(){
+        return "Lines: "+ lines.length+", "+"Ovals: "+ovals.length+", Rectangles: "+rectangles.length;
+    }
+    
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
