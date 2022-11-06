@@ -117,23 +117,23 @@ public class NumbersTable {
     
     //METHODOS GIOA THN DHMIOURGEIA STRING ME TIS TIMES TOU PINAKA
     public static String ConvertToString (int[] array){
-        //DILWSH KAI ARXIKOPOIHSH TOU STRING ME TO 1o STOIXEIO TOU PINAKA
-        String arrayString = String.valueOf(array[0]);
+        //DILWSH KAI ARXIKOPOIHSH TOU STRING ME TO KENO
+        String arrayString = "";
         //PROSPELASH TWN STOIXEIWN TOU PINAKA APO TO 2o STOIXEIO K META
-        for(int i=1;i<array.length;i++){
-            arrayString+=" "+array[i]; //PROSTHIKI STO STRING TO KATHE STOIXEIO TOPU PINAKA K KENO ANAMESA
+        for(int i=0;i<array.length;i++){
+            arrayString+=array[i]; //PROSTHIKI STO STRING TO KATHE STOIXEIO TOPU PINAKA K KENO ANAMESA
         }
         return arrayString; //EPISTROFH TOU STRING
     }        
     
     //METHODOS GIA THN DHMIOURGEIA STRING GIA SYGKEKRIMENES TIMES STO DOSMENO EUROS TOU PINAKA
     public static String ConvertToString (int[] array, int fromIndex, int toIndex){
-        //DILWSH KAI ARXIKOPOIHSH TOU STRING ME THN TIMH TOU STOIXEIOU fromIndex
-        String arrayString = String.valueOf(array[fromIndex]) ;
+        //DILWSH KAI ARXIKOPOIHSH TOU STRING ME TO KENO
+        String arrayString = "" ;
         
-        //PROSPELASH TOU PINAKA APO TO EPOMENO STOIXEIOU TO fromIndex
-        for(int i=fromIndex+1;i<=toIndex;i++){
-            arrayString+=" "+array[i];  //PROSTHIKI STO STRING TO KATHE STOIXEIO TOPU PINAKA K KENO ANAMESA
+        //PROSPELASH TOU PINAKA APO TO  fromIndex
+        for(int i=fromIndex;i<=toIndex;i++){
+            arrayString+=array[i];  //PROSTHIKI STO STRING TO KATHE STOIXEIO TOPU PINAKA K KENO ANAMESA
         }
         return arrayString;//EPISTROFH TOU STRING
     }          
