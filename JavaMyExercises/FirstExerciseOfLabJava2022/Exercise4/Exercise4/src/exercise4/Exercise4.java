@@ -18,11 +18,14 @@ public class Exercise4 {
             b.Play();
             
             //MINIMA KAI EISAGWGH THS EPILOGHS TOU XRHSTH
-            System.out.println("An Theleis Na Xanapaixeis Me Alles Lexeis Pata To 1 Alliws Otidipote Allo Gia Na Vgeis");
-            String inputChoice = input.nextLine();
-            
+            System.out.println("An Theleis Na Xanapaixeis Me Alles Lexeis( Pata y: Nai ,n: Gia Na Vgeis): ; ");
+            String inputChoice="";
+            do{
+                    inputChoice = input.nextLine();
+            }
+            while(!inputChoice.equals("y") && !inputChoice.equals("n")); //ELEGXOS KAI EPANALIPSI EISAGWGHS MEXRI SWSTH TIMH
             //ANALOGOS THN EPILOGH TOU XRHSTH KATAXWRISI STHN CHOICE 
-            if(inputChoice.equals("1")){
+            if(inputChoice.equals("y")){
                 choice=true;
             }
             else{

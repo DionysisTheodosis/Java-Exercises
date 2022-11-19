@@ -100,6 +100,7 @@ public  class  PlayGame {
             i = randomNumber.nextInt(PoolWords.size());//EPISTREFEI ENAN ARITHMO STO EUROS TWN LEXEWN THS PoolWords
             if(!randomWords.contains(i)){ //AN DEN EXEI EISAXTHEI H LEXH POU YPARXEI STHN THESH i
                 if(obWordSearch.addWord(PoolWords.get(i))==0){ //ELEGXOS AN EGINE H EISAGWGH THS LEXHS KAI TOTE MEIWNEI TON COUNTER KAI EISAGEI THN THESH STHN randomWords
+                    System.out.println(PoolWords.get(i).getWord());
                     count--;
                     randomWords.add(i);
                 }
