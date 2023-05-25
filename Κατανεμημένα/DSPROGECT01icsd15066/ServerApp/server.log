@@ -1,0 +1,12 @@
+(TimeStamp): 06:04:2023 06:08:47>>>(Client's_IP):127.0.0.1>>>(Command): NEW_FILE>>>(FileName): das.txt
+(TimeStamp): 06:04:2023 06:10:08>>>(Client's_IP):127.0.0.1>>>(Command): NEW_FILE>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:11:42>>>(Client's_IP):127.0.0.1>>>(Command): DOWNLOAD_FILE>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:12:08>>>(Client's_IP):127.0.0.1>>>(Command): DOWNLOAD_FILE>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:16:54>>>(Client's_IP):127.0.0.1>>>(Command): FILE_CONTENT_INSERTION>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:17:37>>>(Client's_IP):127.0.0.1>>>(Command): DOWNLOAD_FILE>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:18:51>>>(Client's_IP):127.0.0.1>>>(Command): FILE_CONTENT_ANAXATION>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:19:41>>>(Client's_IP):127.0.0.1>>>(Command): DOWNLOAD_FILE>>>(FileName): numbers.txt
+(TimeStamp): 06:04:2023 06:28:40>>>(Client's_IP):127.0.0.1>>>(Command): DELETE_FILE>>>(FileName): numbers.txt
+(TimeStamp): 08:04:2023 23:03:36>>>(Client's_IP):127.0.0.1>>>(Command): NEW_FILE>>>(FileName): ewfwe.txt
+(TimeStamp): 08:04:2023 23:04:40>>>(Client's_IP):127.0.0.1>>>(Command): NEW_FILE>>>(FileName): tre.txt
+(TimeStamp): 08:04:2023 23:04:56>>>(Client's_IP):127.0.0.1>>>(Command): DOWNLOAD_FILE>>>(FileName): tre.txt
